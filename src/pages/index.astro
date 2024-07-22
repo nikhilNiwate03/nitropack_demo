@@ -3,13 +3,19 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+export const NITROPACK_HOME_URL = "https://nitropack-demo.vercel.app/";
+export const NITROPACK_SITE_ID = "dlvPLkQcmuMxBLuEQuChWLFvVOBSVzww";
+export const NITROPACK_SITE_SECRET =
+  "mQZgYbIZ6sjCM7bFYsbFhbrkRlB6f7fr7a8yp82vTx93A4v70RXNFmGnLaZLUd98";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <script src="../../public/libs/init-nitropack.js"></script>
+    <script src="../../public/libs/nitropack/nitropack-sdk/bootstrap.php"
+    ></script>
   </head>
   <body>
     <Header />
